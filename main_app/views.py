@@ -21,10 +21,6 @@ def finchs_detail(request, finch_id):
   return render(request, 'finchs/detail.html', {'finch': finch})
 
 
-def all_finchs(request):
-    finchs = Finch.objects.all()
-    return render(request, 'all.html', {'finchs': finchs})
-
 
 class FinchCreate(CreateView):
   model = Finch
