@@ -21,7 +21,6 @@ def finchs_detail(request, finch_id):
   return render(request, 'finchs/detail.html', {'finch': finch})
 
 
-
 class FinchCreate(CreateView):
   model = Finch
   fields = '__all__'
